@@ -41,7 +41,7 @@ jobs:
           python-version: 3.9
 
       - name: Установить зависимости
-        run: python3 -m pip install -r requirements.txt
+        run: pip install -r requirements.txt
 
       - name: Линтинг
         run: flake8 logistic --exclude logistic/migrations --ignore=E501
